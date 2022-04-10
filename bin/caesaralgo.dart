@@ -47,20 +47,20 @@ String decryptMessage(String message, int key) {
   return cipher;
 }
 
-inputUser(){
-  stdout.write('Enter plain Text:');
-  String? plainText = stdin.readLineSync();
+// inputUser(){
+//   stdout.write('Enter plain Text:');
+//   String? plainText = stdin.readLineSync();
 
-  stdout.write('Enter Cipher Key:');
-  String? cipherKey = stdin.readLineSync();
-  int key = int.parse(cipherKey!);
+//   stdout.write('Enter Cipher Key:');
+//   String? cipherKey = stdin.readLineSync();
+//   int key = int.parse(cipherKey!);
 
-  String cipherText = encryptMessage(plainText!, key);
+//   String cipherText = encryptMessage(plainText!, key);
 
-  print(cipherText);
+//   print(cipherText);
 
-  print(decryptMessage(cipherText, key));
-}
+//   print(decryptMessage(cipherText, key));
+// }
 
 
 
