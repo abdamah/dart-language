@@ -67,7 +67,7 @@ inputUser() {
   String? cipherKey = stdin.readLineSync();
   int key = int.parse(cipherKey!);
 
-  var caesar = CaesarServiceImpl();
+  final caesar = CaesarServiceImpl();
 
   String cipherText = caesar.encryptMessage(plainText!, key);
   print(cipherText);
@@ -75,7 +75,7 @@ inputUser() {
 }
 
 main() {
-  var caesar = CaesarServiceImpl();
+  final caesar = CaesarServiceImpl();
 
   print(caesar.encyrptChar('A', 3));
   print(caesar.decyrptChar('D', 3));
