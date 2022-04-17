@@ -1,6 +1,8 @@
-import 'caesar_cipher_oop.dart';
+import 'guess_game.dart';
 
-void main(List<String> args) {
-  inputUser();
-//  guessSecretWord();
+main() {
+  // guessSecretWord();
+
+  var guess = GuessSecretWord();
+  guess.guessSecretWord();
 }
